@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="my_pic">
+    <file>pic_data/icon/tubiao.jpg</file>
+    <file>pic_data/icon/4.png</file>
+    <file>pic_data/icon/4打开文件 (1).png</file>
+    <file>pic_data/icon/iconfont_剪刀.png</file>
+    <file>pic_data/icon/保存.png</file>
+    <file>pic_data/icon/地图.png</file>
+    <file>pic_data/icon/分析评比.png</file>
+    <file>pic_data/icon/清除.png</file>
+    <file>pic_data/icon/设备.png</file>
+    <file>pic_data/icon/设置.png</file>
+    <file>pic_data/icon/摄像头.png</file>
+    <file>pic_data/icon/退出.png</file>
+    <file>pic_data/icon/相机 (1).png</file>
+    <file>pic_data/icon/用户.png</file>
+    <file>pic_data/icon/最小化0.png</file>
+  </qresource>
+</RCC>
