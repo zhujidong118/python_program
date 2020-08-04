@@ -137,7 +137,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     @pyqtSlot()
     def on_toolButton_clicked(self):
         if self.timer_camera.isActive() == False:  # 若定时器未启动
-            self.flag = self.cap.open(self.CAM_NUM)
+            self.flag = self.cap.open(self.CAM_NUM, cv2.CAP_DSHOW)
             # 参数是0，表示打开笔记本的内置摄像头，参数是视频文件路径则打开视频
             if self.flag == False:  # flag表示open()成不成功
                 msg = QtWidgets.QMessageBox.warning(self, '提示', "请检查相机与电脑是否连接正确",
@@ -328,8 +328,8 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lock.acquire()
         try:
             # self.cap.set(6, cv2.VideoWriter.fourcc('M', 'J', 'P', 'G'))
-            self.cap.set(3, 2592)
-            self.cap.set(4, 1944)
+            # self.cap.set(3, 2592)
+            # self.cap.set(4, 1944)
             flag, self.image = self.cap.read()  # 从视频流中读取
             if flag:
                 show = cv2.cvtColor(self.image, cv2.COLOR_BGR2RGB)  # 视频色彩转换回RGB，这样才是现实的颜色
